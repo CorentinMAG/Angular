@@ -1,0 +1,22 @@
+.header h2{
+	float:left;
+	font-weight: 650;
+}
+
+.header span{
+	float:right;
+	font-style: italic;
+}
+
+.content{
+	clear:both;
+}
+
+.btn-success{
+	margin-right:15px;
+}
+
+.footer button span{
+	display:inline-block;
+	margin-left:3px;
+}
