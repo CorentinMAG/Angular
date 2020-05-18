@@ -1,12 +1,12 @@
 <li [ngClass]="{'list-group-item': true,
-				'list-group-item-success': my_love >0,
-				'list-group-item-danger': my_love <0}">
-	<div class="header"><h2>{{my_title}}</h2><span>{{my_date}}</span></div>
+				'list-group-item-success': my_like >0,
+				'list-group-item-danger': my_like <0}">
+	<div class="header"><h2>{{my_title}}</h2><span>{{my_date |date:'medium':'CET':'fr-FR'}}</span></div>
 	<p class="content">{{my_content}}</p>
 	<div class="footer">
 		<button class="btn btn-success"
-				(click)="Onlike()">Love it!<span *ngIf="my_love>0">{{my_love}}</span></button>
+				(click)="Onlike()">Love it!<span *ngIf="my_like>0">{{my_like}}</span></button>
 		<button class="btn btn-danger"
-				(click)="Ondislike()">Don't love it!!<span *ngIf="my_love <0">{{my_love}}</span></button>
+				(click)="Ondislike()">Don't love it!!<span *ngIf="my_like <0">{{my_like}}</span></button>
 	</div>
 </li>

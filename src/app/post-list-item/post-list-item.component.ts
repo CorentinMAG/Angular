@@ -11,22 +11,22 @@ export class PostListItemComponent implements OnInit {
 
   @Input() my_title:string;
   @Input() my_content:string;
-  @Input() my_love:number;
+  @Input() my_like:number;
   @Input() my_date:string;
 
   getColor(){
-  
+
   }
 
   ngOnInit() {
   }
 
   Onlike(){
-  	this.my_love = this.my_love +1;
+  	this.my_like = this.my_like +1;
   }
 
   Ondislike(){
-  	this.my_love = this.my_love -1;
+  	this.my_like = this.my_like -1;
   }
 
 }
